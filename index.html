@@ -1,37 +1,15 @@
 <html>
+  <head>
+    <title>Adding a Videosphere</title>
+    <script src="https://aframe.io/releases/0.6.1/aframe.min.js"></script>
+  </head>
+  <body>
+    <a-scene>
+      <a-assets>
+        <video id="video" src="https://ucarecdn.com/fadab25d-0b3a-45f7-8ef5-85318e92a261/" autoplay loop crossorigin="anonymous"></video>
+      </a-assets>
 
-<head>
-  <title> Ex.1.1 — A Video "Sky"</title>
-
-  <!--  --------- IMPORTED LIBRARIES  ------>
-
-  <script src="https://aframe.io/releases/0.6.0/aframe.min.js"></script>
-
-</head>
-
-<body>
-
-  <a-scene>
-    <!-- Creating scene -->
-
-
-    <!--  --------- ASSETS  --------- -->
-
-    <!-- Asset links. -->
-    <a-assets>
-      <video id="video" src="https://ucarecdn.com/fadab25d-0b3a-45f7-8ef5-85318e92a261/" autoplay loop crossorigin="anonymous"></video>
-    </a-assets>
-
-
-    <a-videosphere src="#video" rotation="0 80 0"></a-videosphere> 
-  <!--This is the tag for a video sky, videosphere 
-      If you play with the video rotation, you can give the user a new perspective
-      Even without moving around-->
-    
-   
-
-  </a-scene>
-  <!-- Closing scene -->
-</body>
-
+      <a-videosphere src="#video" rotation="0 80 0"></a-videosphere> 
+    </a-scene>
+  </body>
 </html>
