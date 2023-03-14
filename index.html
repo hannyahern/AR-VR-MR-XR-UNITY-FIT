@@ -4,12 +4,17 @@
     <script src="https://aframe.io/releases/0.6.1/aframe.min.js"></script>
   </head>
   <body>
-    <a-scene>
-      <a-assets>
-        <video id="video" src="https://cdn.glitch.com/249673b1-43f9-4c29-ab34-a7788dd3b4a1%2FR0010380_er.MP4?v=1631742161959" autoplay loop crossorigin="anonymous"></video>
-      </a-assets>
-
-      <a-videosphere src="#video" rotation="0 80 0"></a-videosphere> 
+    
+         <a-scene>
+  <a-assets>
+    <img id="sky" src="https://cdn.glitch.global/249673b1-43f9-4c29-ab34-a7788dd3b4a1/R0010370_Proxy.png?v=1678837602243">
+  </a-assets>
+  <a-sky src="#sky"></a-sky>
+</a-scene>
+   
+    
+ 
+      
     </a-scene>
   </body>
 </html>
